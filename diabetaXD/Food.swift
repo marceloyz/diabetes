@@ -7,3 +7,11 @@
 //
 
 import Foundation
+
+
+class Food: Decodable {
+    var foodName:String?
+    var carbo:Float?
+    var foods = [Food]()
+}
+

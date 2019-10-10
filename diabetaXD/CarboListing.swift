@@ -8,4 +8,10 @@
 
 import Foundation
 
-class
+class Carbo: Codable{
+    var carboList:[CarboListing]?
+}
+
+class CarboListing:Codable{
+    var qttCarbo: Int?
+}
