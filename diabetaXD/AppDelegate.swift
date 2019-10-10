@@ -16,7 +16,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        
+        
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        let storyboard = UIStoryboard(name: "Name", bundle: nil)
+        var vc: UIViewController
+        if(UserDefaults.standard.value(forKey: "name") as? String) == nil{
+            vc = storyboard.instantiateViewController(identifier: "tabelaInsulina")
+        }else {
+            vc.storyboard?.instantiateInitialViewController()!
+            
+        }
+        
+        self.window?.rootViewController = vc
+        self.window?.makeKeyAndVisible()
         return true
+        
+       
+        
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
