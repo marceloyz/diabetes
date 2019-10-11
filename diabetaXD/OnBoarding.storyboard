@@ -23,15 +23,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lfx-2m-wcy">
-                                <rect key="frame" x="116" y="646" width="134" height="82"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mCh-iq-XJ6">
+                                <rect key="frame" x="157" y="568" width="73" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Prosseguir">
-                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="61"/>
-                                </state>
+                                <state key="normal" title="Prosseguir"/>
                                 <connections>
-                                    <action selector="button:" destination="JqD-Wr-iDw" eventType="touchUpInside" id="dAH-59-jz6"/>
-                                    <action selector="continueButton:" destination="yCx-9z-oED" eventType="touchUpInside" id="Byc-pS-erN"/>
+                                    <action selector="connectButton:" destination="nZ2-2G-1bX" eventType="touchUpInside" id="vP8-C2-NBb"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -43,7 +40,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wwz-sx-1DC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="yCx-9z-oED" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-1306" y="1573"/>
         </scene>
@@ -97,7 +93,7 @@
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="61"/>
                                 </state>
                                 <connections>
-                                    <action selector="button:" destination="JqD-Wr-iDw" eventType="touchUpInside" id="3Ll-fC-wM1"/>
+                                    <action selector="button:" destination="JqD-Wr-iDw" eventType="touchUpInside" id="N5n-Ep-mvD"/>
                                 </connections>
                             </button>
                         </subviews>

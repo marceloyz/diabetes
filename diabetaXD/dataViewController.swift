@@ -16,14 +16,13 @@ class dataViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
-    @IBAction func continueButton(_ sender: Any) {
+    
+    @IBAction func button(_ sender: Any) {
         let storyboard = UIStoryboard(name: "name", bundle: nil)
         let mainVC = storyboard.instantiateViewController(withIdentifier: "mainVC") as! ViewController
         self.present(mainVC, animated: true, completion: nil)
-        
-        
     }
+    
     /*
     // MARK: - Navigation
 

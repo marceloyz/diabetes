@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		55105E1623509C0400CB3426 /* OnBoarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55105E1523509C0400CB3426 /* OnBoarding.storyboard */; };
-		55105E1A2350A22800CB3426 /* dataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55105E192350A22800CB3426 /* dataViewController.swift */; };
 		55105E202350ACDA00CB3426 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55105E1F2350ACDA00CB3426 /* loginViewController.swift */; };
+		55105E242350BC7200CB3426 /* dataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55105E232350BC7200CB3426 /* dataViewController.swift */; };
 		5575967A234DF7BF00955C02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55759679234DF7BF00955C02 /* AppDelegate.swift */; };
 		5575967C234DF7BF00955C02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5575967B234DF7BF00955C02 /* ViewController.swift */; };
 		5575967F234DF7BF00955C02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5575967D234DF7BF00955C02 /* Main.storyboard */; };
@@ -19,8 +19,8 @@
 
 /* Begin PBXFileReference section */
 		55105E1523509C0400CB3426 /* OnBoarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnBoarding.storyboard; sourceTree = "<group>"; };
-		55105E192350A22800CB3426 /* dataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = dataViewController.swift; path = ../dataViewController.swift; sourceTree = "<group>"; };
 		55105E1F2350ACDA00CB3426 /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = loginViewController.swift; path = ../loginViewController.swift; sourceTree = "<group>"; };
+		55105E232350BC7200CB3426 /* dataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = dataViewController.swift; path = diabetaXD/dataViewController.swift; sourceTree = "<group>"; };
 		55759676234DF7BF00955C02 /* diabetaXD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = diabetaXD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55759679234DF7BF00955C02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5575967B234DF7BF00955C02 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -44,6 +44,7 @@
 		5575966D234DF7BF00955C02 = {
 			isa = PBXGroup;
 			children = (
+				55105E232350BC7200CB3426 /* dataViewController.swift */,
 				55759678234DF7BF00955C02 /* diabetaXD */,
 				55759677234DF7BF00955C02 /* Products */,
 			);
@@ -62,7 +63,6 @@
 			children = (
 				55759679234DF7BF00955C02 /* AppDelegate.swift */,
 				5575967B234DF7BF00955C02 /* ViewController.swift */,
-				55105E192350A22800CB3426 /* dataViewController.swift */,
 				55105E1F2350ACDA00CB3426 /* loginViewController.swift */,
 				55105E1523509C0400CB3426 /* OnBoarding.storyboard */,
 				5575967D234DF7BF00955C02 /* Main.storyboard */,
@@ -145,10 +145,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55105E242350BC7200CB3426 /* dataViewController.swift in Sources */,
 				55105E202350ACDA00CB3426 /* loginViewController.swift in Sources */,
 				5575967C234DF7BF00955C02 /* ViewController.swift in Sources */,
 				5575967A234DF7BF00955C02 /* AppDelegate.swift in Sources */,
-				55105E1A2350A22800CB3426 /* dataViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
