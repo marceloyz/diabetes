@@ -8,7 +8,7 @@
 
 import UIKit
 
-class loginViewController: UIViewController {
+class dataViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,7 +17,7 @@ class loginViewController: UIViewController {
     }
     
 
-    @IBAction func button(_ sender: Any) {
+    @IBAction func continueButton(_ sender: Any) {
         let storyboard = UIStoryboard(name: "name", bundle: nil)
         let mainVC = storyboard.instantiateViewController(withIdentifier: "mainVC") as! ViewController
         self.present(mainVC, animated: true, completion: nil)

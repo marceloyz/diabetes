@@ -8,6 +8,7 @@
 
 import UIKit
 
-class UISceneDelegate: UIScene {
+class UISceneDelegate: UISceneDelegate {
+    
 
 }

@@ -17,6 +17,10 @@ class loginViewController: UIViewController {
     }
     
 
+    @IBAction func continueButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "loginToData", sender: self)
+        
+    }
     /*
     // MARK: - Navigation
 
