@@ -18,7 +18,7 @@ class dataViewController: UIViewController {
     
     
     @IBAction func button(_ sender: Any) {
-        let storyboard = UIStoryboard(name: "name", bundle: nil)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let mainVC = storyboard.instantiateViewController(withIdentifier: "mainVC") as! ViewController
         self.present(mainVC, animated: true, completion: nil)
     }

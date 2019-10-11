@@ -43,7 +43,7 @@
             </objects>
             <point key="canvasLocation" x="281" y="191"/>
         </scene>
-        <!--Title-->
+        <!--View Controller-->
         <scene sceneID="iL1-mA-cEy">
             <objects>
                 <viewController storyboardIdentifier="mainVC" id="nNs-BM-qur" sceneMemberID="viewController">
@@ -79,7 +79,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4fY-BE-L2u"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" id="y6P-bH-vou"/>
+                    <navigationItem key="navigationItem" id="y6P-bH-vou"/>
                     <connections>
                         <outlet property="searchDisplayController" destination="mZw-as-gfR" id="eRL-fK-Bqt"/>
                     </connections>
@@ -107,67 +107,12 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="RsU-JM-lt7" kind="relationship" relationship="rootViewController" id="OVc-jx-Mg0"/>
+                        <segue destination="MBO-Df-O5A" kind="relationship" relationship="rootViewController" id="g4q-jw-dFl"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rgJ-cT-cFb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-459" y="867"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="Whz-w6-a5p">
-            <objects>
-                <viewController id="RsU-JM-lt7" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="5BM-wq-Uno">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Di-uS-69h">
-                                <rect key="frame" x="39" y="382" width="0.0" height="0.0"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Q7J-z0-LE1">
-                                <rect key="frame" x="20" y="169" width="374" height="352"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <string key="text">ESSE APP FOI CRIADO POR ALUNOS DA FCI 
-MACKENZIE E OS MESMOS NAO POSSUEM 
-NENHUMA PRESCRICAO PARA SOLICITAR E/OU RECEITAR MEDICAMENTOS E VALORES.</string>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Qma-BC-aLz">
-                                <rect key="frame" x="20" y="169" width="374" height="352"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <string key="text">ESSE APP FOI CRIADO POR ALUNOS DA FCI 
-MACKENZIE E OS MESMOS NAO POSSUEM 
-NENHUMA PRESCRICAO PARA SOLICITAR E/OU RECEITAR MEDICAMENTOS E VALORES.</string>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KlS-v4-bPt">
-                                <rect key="frame" x="129" y="567" width="156" height="90"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="CONTINUAR"/>
-                                <connections>
-                                    <segue destination="MBO-Df-O5A" kind="show" id="Fmc-4X-tGl"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="gSL-2h-Qbk"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="Mhf-X0-9JT"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Kyr-SS-l3a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="368" y="867"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="c3W-Vu-k84">
@@ -177,7 +122,7 @@ NENHUMA PRESCRICAO PARA SOLICITAR E/OU RECEITAR MEDICAMENTOS E VALORES.</string>
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Quantidaded de carboidratos" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pqi-dN-WC1">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Quantidade de carboidratos" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pqi-dN-WC1">
                                 <rect key="frame" x="39" y="262" width="314" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -189,15 +134,6 @@ NENHUMA PRESCRICAO PARA SOLICITAR E/OU RECEITAR MEDICAMENTOS E VALORES.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jXf-1a-2Ar">
-                                <rect key="frame" x="147" y="356" width="121" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="quaternarySystemFillColor" red="0.45490196078431372" green="0.45490196078431372" blue="0.50196078431372548" alpha="0.080000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                <state key="normal" title="ENVIAR">
-                                    <color key="titleColor" systemColor="systemGreenColor" red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ex: 18g" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jTv-2B-fyM">
                                 <rect key="frame" x="224" y="176" width="97" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -217,6 +153,15 @@ NENHUMA PRESCRICAO PARA SOLICITAR E/OU RECEITAR MEDICAMENTOS E VALORES.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jXf-1a-2Ar">
+                                <rect key="frame" x="104" y="358" width="206" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="quaternarySystemFillColor" red="0.45490196078431372" green="0.45490196078431372" blue="0.50196078431372548" alpha="0.080000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="CALCULAR">
+                                    <color key="titleColor" systemColor="systemGreenColor" red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="DTT-6n-dHZ"/>
@@ -225,7 +170,7 @@ NENHUMA PRESCRICAO PARA SOLICITAR E/OU RECEITAR MEDICAMENTOS E VALORES.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9rt-zj-EtO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1221.7391304347827" y="866.51785714285711"/>
+            <point key="canvasLocation" x="456.52173913043481" y="866.51785714285711"/>
         </scene>
     </scenes>
 </document>
