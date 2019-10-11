@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		55105E1623509C0400CB3426 /* OnBoarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55105E1523509C0400CB3426 /* OnBoarding.storyboard */; };
 		5575967A234DF7BF00955C02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55759679234DF7BF00955C02 /* AppDelegate.swift */; };
 		5575967C234DF7BF00955C02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5575967B234DF7BF00955C02 /* ViewController.swift */; };
 		5575967F234DF7BF00955C02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5575967D234DF7BF00955C02 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		55105E1523509C0400CB3426 /* OnBoarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnBoarding.storyboard; sourceTree = "<group>"; };
 		55759676234DF7BF00955C02 /* diabetaXD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = diabetaXD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55759679234DF7BF00955C02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5575967B234DF7BF00955C02 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			children = (
 				55759679234DF7BF00955C02 /* AppDelegate.swift */,
 				5575967B234DF7BF00955C02 /* ViewController.swift */,
+				55105E1523509C0400CB3426 /* OnBoarding.storyboard */,
 				5575967D234DF7BF00955C02 /* Main.storyboard */,
 				55759680234DF7C000955C02 /* Assets.xcassets */,
 				55759682234DF7C000955C02 /* LaunchScreen.storyboard */,
@@ -125,6 +128,7 @@
 				55759684234DF7C000955C02 /* LaunchScreen.storyboard in Resources */,
 				55759681234DF7C000955C02 /* Assets.xcassets in Resources */,
 				5575967F234DF7BF00955C02 /* Main.storyboard in Resources */,
+				55105E1623509C0400CB3426 /* OnBoarding.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

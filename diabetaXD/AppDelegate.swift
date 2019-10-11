@@ -11,7 +11,7 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    var window: UIWindow?
+    
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
@@ -19,18 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         
-        self.window = UIWindow(frame: UIScreen.main.bounds)
-        let storyboard = UIStoryboard(name: "Name", bundle: nil)
-        var vc: UIViewController
-        if(UserDefaults.standard.value(forKey: "name") as? String) == nil{
-            vc = storyboard.instantiateViewController(identifier: "tabelaInsulina")
-        }else {
-            vc.storyboard?.instantiateInitialViewController()!
-            
-        }
-        
-        self.window?.rootViewController = vc
-        self.window?.makeKeyAndVisible()
+     
         return true
         
        
