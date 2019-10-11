@@ -9,9 +9,9 @@
 import Foundation
 
 
-class Food: Decodable {
-    var foodName:String?
-    var carbo:Float?
-    var foods = [Food]()
+class Food: Codable {
+    var description:String?
+    var carbohydrate_g:Float?
+    
 }
 
