@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="B5k-gA-zkB">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="B5k-gA-zkB">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Tab Bar Controller-->
+        <!--mainVC-->
         <scene sceneID="cBh-vT-aMm">
             <objects>
-                <tabBarController id="B5k-gA-zkB" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="mainVC" title="mainVC" id="B5k-gA-zkB" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="N8u-p8-Rsv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -28,11 +26,11 @@
             </objects>
             <point key="canvasLocation" x="-459" y="191"/>
         </scene>
-        <!--Item-->
+        <!--Calculadora-->
         <scene sceneID="ddY-4s-tQK">
             <objects>
                 <navigationController id="mk6-eV-ZU3" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="2P1-fL-Ute"/>
+                    <tabBarItem key="tabBarItem" title="Calculadora" id="2P1-fL-Ute"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cBu-CM-Skg">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -45,7 +43,7 @@
             </objects>
             <point key="canvasLocation" x="281" y="191"/>
         </scene>
-        <!--Title-->
+        <!--View Controller-->
         <scene sceneID="iL1-mA-cEy">
             <objects>
                 <viewController id="nNs-BM-qur" sceneMemberID="viewController">
@@ -81,7 +79,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4fY-BE-L2u"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" id="y6P-bH-vou"/>
+                    <navigationItem key="navigationItem" id="y6P-bH-vou"/>
                     <connections>
                         <outlet property="searchDisplayController" destination="mZw-as-gfR" id="eRL-fK-Bqt"/>
                     </connections>
@@ -99,51 +97,80 @@
             </objects>
             <point key="canvasLocation" x="1071.0144927536232" y="190.84821428571428"/>
         </scene>
-        <!--Root View Controller-->
-        <scene sceneID="YV9-WW-6Fw">
-            <objects>
-                <tableViewController id="uTI-T2-KUs" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="nyK-YR-2Kc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Ycp-mV-pkz">
-                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ycp-mV-pkz" id="oia-NJ-zun">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="uTI-T2-KUs" id="meL-l2-U5K"/>
-                            <outlet property="delegate" destination="uTI-T2-KUs" id="GAi-QJ-9k6"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="h8v-gf-r3W"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="h9Y-Wk-CA1" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="280" y="867"/>
-        </scene>
-        <!--Item-->
+        <!--Insulina-->
         <scene sceneID="nCg-E5-E6i">
             <objects>
                 <navigationController id="XaZ-2r-WsR" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="3gP-NL-f41"/>
+                    <tabBarItem key="tabBarItem" title="Insulina" id="3gP-NL-f41"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="IDI-7k-z40">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="uTI-T2-KUs" kind="relationship" relationship="rootViewController" id="kFc-aS-aXf"/>
+                        <segue destination="MBO-Df-O5A" kind="relationship" relationship="rootViewController" id="g4q-jw-dFl"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rgJ-cT-cFb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-459" y="867"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="c3W-Vu-k84">
+            <objects>
+                <viewController id="MBO-Df-O5A" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VQv-uI-jPx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Quantidade de carboidratos" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pqi-dN-WC1">
+                                <rect key="frame" x="39" y="262" width="314" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Quantidade de insulina()" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lTt-f8-Tzv">
+                                <rect key="frame" x="39" y="479" width="314" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ex: 18g" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jTv-2B-fyM">
+                                <rect key="frame" x="224" y="176" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=":" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eGK-Mq-9oL">
+                                <rect key="frame" x="198" y="181" width="18" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ex: 1u" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ayk-b1-7y4">
+                                <rect key="frame" x="93" y="176" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jXf-1a-2Ar">
+                                <rect key="frame" x="104" y="358" width="206" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="quaternarySystemFillColor" red="0.4549019608" green="0.4549019608" blue="0.50196078430000002" alpha="0.080000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="CALCULAR">
+                                    <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="DTT-6n-dHZ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="IAi-FY-Pcp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9rt-zj-EtO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="456.52173913043481" y="866.51785714285711"/>
         </scene>
     </scenes>
 </document>

@@ -17,6 +17,5 @@ class ViewController: UIViewController, UISearchBarDelegate {
         // Do any additional setup after loading the view.
     }
 
-
 }
 
