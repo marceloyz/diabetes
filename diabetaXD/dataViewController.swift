@@ -12,15 +12,19 @@ class dataViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+      
+        
+        
     }
     
+    @IBOutlet weak var welcomeLabekl: UILabel!
     
     @IBAction func button(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let mainVC = storyboard.instantiateViewController(withIdentifier: "mainVC") as! ViewController
+        let mainVC = storyboard.instantiateViewController(withIdentifier: "mainVC")
         self.present(mainVC, animated: true, completion: nil)
+        
+       
     }
     
     /*

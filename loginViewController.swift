@@ -9,17 +9,33 @@
 import UIKit
 
 class loginViewController: UIViewController {
-
+    @IBOutlet weak var nomeTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+           
+        
+        
+       
         // Do any additional setup after loading the view.
     }
+   
+   
+   
+  
+ 
     
-
+   
+    
     
     @IBAction func connectButton(_ sender: Any) {
         self.performSegue(withIdentifier: "loginToData", sender: self)
+        
+    
+        
+     
+        
     }
     /*
     // MARK: - Navigation

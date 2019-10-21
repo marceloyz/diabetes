@@ -20,7 +20,7 @@
 /* Begin PBXFileReference section */
 		55105E1523509C0400CB3426 /* OnBoarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnBoarding.storyboard; sourceTree = "<group>"; };
 		55105E1F2350ACDA00CB3426 /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = loginViewController.swift; path = ../loginViewController.swift; sourceTree = "<group>"; };
-		55105E232350BC7200CB3426 /* dataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = dataViewController.swift; path = diabetaXD/dataViewController.swift; sourceTree = "<group>"; };
+		55105E232350BC7200CB3426 /* dataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataViewController.swift; sourceTree = "<group>"; };
 		55759676234DF7BF00955C02 /* diabetaXD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = diabetaXD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55759679234DF7BF00955C02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5575967B234DF7BF00955C02 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -44,7 +44,6 @@
 		5575966D234DF7BF00955C02 = {
 			isa = PBXGroup;
 			children = (
-				55105E232350BC7200CB3426 /* dataViewController.swift */,
 				55759678234DF7BF00955C02 /* diabetaXD */,
 				55759677234DF7BF00955C02 /* Products */,
 			);
@@ -61,9 +60,10 @@
 		55759678234DF7BF00955C02 /* diabetaXD */ = {
 			isa = PBXGroup;
 			children = (
+				55105E232350BC7200CB3426 /* dataViewController.swift */,
+				55105E1F2350ACDA00CB3426 /* loginViewController.swift */,
 				55759679234DF7BF00955C02 /* AppDelegate.swift */,
 				5575967B234DF7BF00955C02 /* ViewController.swift */,
-				55105E1F2350ACDA00CB3426 /* loginViewController.swift */,
 				55105E1523509C0400CB3426 /* OnBoarding.storyboard */,
 				5575967D234DF7BF00955C02 /* Main.storyboard */,
 				55759680234DF7C000955C02 /* Assets.xcassets */,
