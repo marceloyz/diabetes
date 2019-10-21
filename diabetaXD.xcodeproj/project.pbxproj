@@ -16,7 +16,7 @@
 		55C18ADF234F586900CA1A40 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C18ADE234F586900CA1A40 /* Food.swift */; };
 		55C18AE3234F593A00CA1A40 /* FoodHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C18AE2234F593A00CA1A40 /* FoodHandler.swift */; };
 		55C18AE5234F5AD800CA1A40 /* CarboListing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C18AE4234F5AD800CA1A40 /* CarboListing.swift */; };
-		55C18AE7234F6D2E00CA1A40 /* TACO.json in Resources */ = {isa = PBXBuildFile; fileRef = 55C18AE6234F6D2E00CA1A40 /* TACO.json */; };
+		55C18AE9235DE93000CA1A40 /* TACO.json in Resources */ = {isa = PBXBuildFile; fileRef = 55C18AE8235DE93000CA1A40 /* TACO.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +31,7 @@
 		55C18ADE234F586900CA1A40 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		55C18AE2234F593A00CA1A40 /* FoodHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FoodHandler.swift; path = ../FoodHandler.swift; sourceTree = "<group>"; };
 		55C18AE4234F5AD800CA1A40 /* CarboListing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarboListing.swift; sourceTree = "<group>"; };
-		55C18AE6234F6D2E00CA1A40 /* TACO.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = TACO.json; path = ../../../Downloads/TACO.json; sourceTree = "<group>"; };
+		55C18AE8235DE93000CA1A40 /* TACO.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TACO.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +74,7 @@
 				55759680234DF7C000955C02 /* Assets.xcassets */,
 				55759682234DF7C000955C02 /* LaunchScreen.storyboard */,
 				55759685234DF7C000955C02 /* Info.plist */,
-				55C18AE6234F6D2E00CA1A40 /* TACO.json */,
+				55C18AE8235DE93000CA1A40 /* TACO.json */,
 			);
 			path = diabetaXD;
 			sourceTree = "<group>";
@@ -137,9 +137,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55C18AE9235DE93000CA1A40 /* TACO.json in Resources */,
 				55759684234DF7C000955C02 /* LaunchScreen.storyboard in Resources */,
 				55759681234DF7C000955C02 /* Assets.xcassets in Resources */,
-				55C18AE7234F6D2E00CA1A40 /* TACO.json in Resources */,
 				5575967F234DF7BF00955C02 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
