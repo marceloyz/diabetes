@@ -31,7 +31,7 @@
 		55C18ADE234F586900CA1A40 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		55C18AE2234F593A00CA1A40 /* FoodHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FoodHandler.swift; path = ../FoodHandler.swift; sourceTree = "<group>"; };
 		55C18AE4234F5AD800CA1A40 /* CarboListing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarboListing.swift; sourceTree = "<group>"; };
-		55C18AE6234F6D2E00CA1A40 /* TACO.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = TACO.json; path = ../../../Downloads/TACO.json; sourceTree = "<group>"; };
+		55C18AE6234F6D2E00CA1A40 /* TACO.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = TACO.json; path = /Users/alunomack/Documents/diabetaXD/diabetaXD/../../../Downloads/TACO.json; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */

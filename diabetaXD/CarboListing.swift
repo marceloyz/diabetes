@@ -6,7 +6,6 @@
 //  Copyright © 2019 Aluno Mack. All rights reserved.
 //
 
-import Foundation
 
 class Carbo: Codable{
     var carboList:[CarboListing]?
