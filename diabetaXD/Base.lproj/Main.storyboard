@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MBO-Df-O5A">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oiZ-R8-Nmk">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -7,24 +7,29 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Baloo-Regular.ttf">
+            <string>Baloo</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Food View Controller-->
         <scene sceneID="iL1-mA-cEy">
             <objects>
                 <viewController id="nNs-BM-qur" customClass="FoodViewController" customModule="diabetaXD" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jKO-vJ-sk3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <searchBar contentMode="redraw" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2D0-n0-XL5">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="127"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="93"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <outlet property="delegate" destination="nNs-BM-qur" id="mKU-Yb-Nzt"/>
                                 </connections>
                             </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3bU-we-qlZ" customClass="FoodTableView" customModule="diabetaXD" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="127" width="414" height="681"/>
+                                <rect key="frame" x="0.0" y="181" width="414" height="681"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="681" id="aGt-oK-a44"/>
@@ -40,14 +45,14 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FoodName" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LK0-a7-aK6">
                                                     <rect key="frame" x="20" y="12" width="270" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="Baloo" family="Baloo" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Carbo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c25-VC-nIz">
                                                     <rect key="frame" x="305" y="11" width="94" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="Baloo" family="Baloo" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -77,7 +82,6 @@
                     <navigationItem key="navigationItem" id="y6P-bH-vou"/>
                     <connections>
                         <outlet property="SearchBar" destination="2D0-n0-XL5" id="dJp-hb-w4V"/>
-                        <outlet property="searchBar" destination="2D0-n0-XL5" id="u8s-1I-JPJ"/>
                         <outlet property="searchDisplayController" destination="mZw-as-gfR" id="eRL-fK-Bqt"/>
                         <outlet property="tableView" destination="3bU-we-qlZ" id="x6C-p1-yda"/>
                     </connections>
@@ -86,14 +90,13 @@
                 <searchDisplayController id="mZw-as-gfR">
                     <connections>
                         <outlet property="delegate" destination="nNs-BM-qur" id="pYF-R4-3e1"/>
-                        <outlet property="searchBar" destination="2D0-n0-XL5" id="DEP-ax-P7s"/>
                         <outlet property="searchContentsController" destination="nNs-BM-qur" id="xEN-q7-pV0"/>
                         <outlet property="searchResultsDataSource" destination="nNs-BM-qur" id="Vaz-Sn-8mR"/>
                         <outlet property="searchResultsDelegate" destination="nNs-BM-qur" id="xfz-SU-p0u"/>
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="1071.0144927536232" y="190.84821428571428"/>
+            <point key="canvasLocation" x="1981.1594202898552" y="190.84821428571428"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="c3W-Vu-k84">
@@ -103,54 +106,63 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Quantidade de carboidratos" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pqi-dN-WC1">
-                                <rect key="frame" x="39" y="262" width="314" height="34"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fundo" translatesAutoresizingMaskIntoConstraints="NO" id="ECd-RP-1ci">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Quantidade de carboidratos" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pqi-dN-WC1">
+                                <rect key="frame" x="39" y="346" width="314" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Baloo" family="Baloo" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Quantidade de insulina()" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lTt-f8-Tzv">
-                                <rect key="frame" x="39" y="479" width="314" height="34"/>
+                                <rect key="frame" x="39" y="505" width="314" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="Baloo" family="Baloo" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ex: 18g" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jTv-2B-fyM">
-                                <rect key="frame" x="224" y="176" width="97" height="34"/>
+                                <rect key="frame" x="256" y="228" width="97" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="Baloo" family="Baloo" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=":" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eGK-Mq-9oL">
-                                <rect key="frame" x="198" y="181" width="18" height="21"/>
+                                <rect key="frame" x="198" y="235" width="18" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Baloo" family="Baloo" pointSize="22"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ex: 1u" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ayk-b1-7y4">
-                                <rect key="frame" x="93" y="176" width="97" height="34"/>
+                                <rect key="frame" x="68" y="228" width="97" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="Baloo" family="Baloo" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jXf-1a-2Ar">
-                                <rect key="frame" x="104" y="358" width="206" height="58"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="quaternarySystemFillColor" red="0.45490196078431372" green="0.45490196078431372" blue="0.50196078431372548" alpha="0.080000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                <state key="normal" title="CALCULAR">
-                                    <color key="titleColor" systemColor="systemGreenColor" red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n3K-xU-n8C">
-                                <rect key="frame" x="348" y="44" width="46" height="30"/>
+                                <rect key="frame" x="350" y="42" width="47" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <fontDescription key="fontDescription" name="Baloo" family="Baloo" pointSize="17"/>
+                                <state key="normal" title="Foods">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
                                 <connections>
-                                    <segue destination="nNs-BM-qur" kind="show" id="mhO-FB-JQl"/>
+                                    <segue destination="nNs-BM-qur" kind="show" id="52m-rF-F1h"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="seringola" translatesAutoresizingMaskIntoConstraints="NO" id="H0u-0C-sh6">
+                                <rect key="frame" x="36" y="559" width="358" height="219"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Insulina abaixo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bfu-Tb-5B7">
+                                <rect key="frame" x="68" y="113" width="253" height="87"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Baloo" family="Baloo" pointSize="29"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="DTT-6n-dHZ"/>
@@ -159,7 +171,29 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9rt-zj-EtO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-10" y="191"/>
+            <point key="canvasLocation" x="900.00000000000011" y="190.84821428571428"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="alQ-xm-SL0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oiZ-R8-Nmk" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Muh-6e-tQ1">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="MBO-Df-O5A" kind="relationship" relationship="rootViewController" id="Mty-x5-PrT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hxK-lQ-lDZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-10.144927536231885" y="190.84821428571428"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="fundo" width="828" height="1792"/>
+        <image name="seringola" width="606" height="139"/>
+    </resources>
 </document>

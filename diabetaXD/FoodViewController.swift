@@ -14,6 +14,7 @@ class FoodViewController: UIViewController, UITableViewDelegate, UISearchBarDele
     @IBOutlet weak var tableView: UITableView!
     
     var foods:[Food] = []
+    var searchFood:[Food] = []
     
     
     override func viewDidLoad() {
@@ -25,6 +26,7 @@ class FoodViewController: UIViewController, UITableViewDelegate, UISearchBarDele
         do {
             let data = try Data(contentsOf: Bundle.main.url(forResource: "TACO", withExtension: "json")!)
             foods = try JSONDecoder().decode([Food].self, from: data)
+            searchFood = foods
             tableView.reloadData()
         } catch { print(error) }
     }
@@ -33,30 +35,30 @@ class FoodViewController: UIViewController, UITableViewDelegate, UISearchBarDele
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return foods.count
+        return searchFood.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "foodCell") as? FoodViewCell{
-            cell.foodName.text = foods[indexPath.row].description
-            cell.carbo.text = foods[indexPath.row].carbohydrate_g?.description
+            cell.foodName.text = searchFood[indexPath.row].description
+            cell.carbo.text = searchFood[indexPath.row].carbohydrate_g?.description
             return cell
         }
         return UITableViewCell()
     }
     
-    // Do any additional setup after loading the view.
     
     
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        searchFood = foods.filter({ (aFood) -> Bool in
+            (aFood.description?.contains(searchText))!
+        })
+        if searchFood.count < 1 {
+            searchFood = foods
+        }
+        tableView.reloadData()
+    }
+    
+    
     
 }
-

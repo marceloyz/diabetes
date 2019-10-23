@@ -12,6 +12,5 @@ import Foundation
 class Food: Codable {
     var description:String?
     var carbohydrate_g:Float?
-    
 }
 
