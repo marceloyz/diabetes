@@ -1,7 +1,7 @@
 
 import UIKit
 
-class loginViewController: UIViewController {
+class loginViewController: UIViewController{
     @IBOutlet weak var nomeTextField: UITextField!
     
     override func viewDidLoad() {
@@ -9,6 +9,8 @@ class loginViewController: UIViewController {
 //        setupBottomButtonConstraints()
 //                 addActionToBottomButton()
 //                 bottomCustomButton.setTitle("Bottom", for: .normal)
+        
+       
     }
 
     
