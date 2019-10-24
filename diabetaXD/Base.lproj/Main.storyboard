@@ -98,10 +98,10 @@
             </objects>
             <point key="canvasLocation" x="1981.1594202898552" y="190.84821428571428"/>
         </scene>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="c3W-Vu-k84">
             <objects>
-                <viewController storyboardIdentifier="mainVC" id="MBO-Df-O5A" sceneMemberID="viewController">
+                <viewController id="MBO-Df-O5A" customClass="HomeViewController" customModule="diabetaXD" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VQv-uI-jPx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -111,13 +111,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Quantidade de carboidratos" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pqi-dN-WC1">
-                                <rect key="frame" x="39" y="346" width="314" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Baloo" family="Baloo" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Quantidade de insulina()" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lTt-f8-Tzv">
-                                <rect key="frame" x="39" y="505" width="314" height="34"/>
+                                <rect key="frame" x="50" y="304" width="314" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Baloo" family="Baloo" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -141,17 +135,12 @@
                                 <fontDescription key="fontDescription" name="Baloo" family="Baloo" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="seringola" translatesAutoresizingMaskIntoConstraints="NO" id="H0u-0C-sh6">
-                                <rect key="frame" x="36" y="559" width="358" height="219"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Quantidade de insulina()" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lTt-f8-Tzv">
+                                <rect key="frame" x="50" y="366" width="314" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Insulina abaixo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bfu-Tb-5B7">
-                                <rect key="frame" x="68" y="113" width="253" height="87"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Baloo" family="Baloo" pointSize="29"/>
-                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <fontDescription key="fontDescription" name="Baloo" family="Baloo" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="DTT-6n-dHZ"/>
@@ -172,7 +161,7 @@
         <!--Navigation View Controller-->
         <scene sceneID="alQ-xm-SL0">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oiZ-R8-Nmk" customClass="NavigationViewController" customModule="diabetaXD" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="mainVC" automaticallyAdjustsScrollViewInsets="NO" id="oiZ-R8-Nmk" customClass="NavigationViewController" customModule="diabetaXD" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Muh-6e-tQ1">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -190,6 +179,5 @@
     </scenes>
     <resources>
         <image name="fundo" width="828" height="1792"/>
-        <image name="seringola" width="606" height="139"/>
     </resources>
 </document>

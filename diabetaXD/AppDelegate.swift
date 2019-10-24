@@ -25,7 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate{
         if launchedBefore{
             vc = mainStoryBoard.instantiateInitialViewController()!
         }else{
-            vc = launchStoryBoard.instantiateViewController(withIdentifier: "loginStoryBoard")
+            vc = launchStoryBoard.instantiateInitialViewController()!
         }
         UserDefaults.standard.set(true, forKey: "hasLaunched")
         self.window?.rootViewController = vc

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jrI-kz-zEe">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -48,6 +48,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="iU2-C5-Wpg"/>
                     </view>
+                    <navigationItem key="navigationItem" id="PzM-EN-I8o"/>
                     <connections>
                         <outlet property="nomeTextField" destination="hW0-F8-t7T" id="yEu-0P-vIh"/>
                         <outlet property="topCustomButton" destination="mCh-iq-XJ6" id="cGj-Pu-DTI"/>
@@ -55,14 +56,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wwz-sx-1DC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1307.2463768115942" y="1572.9910714285713"/>
+            <point key="canvasLocation" x="-397.10144927536237" y="1572.9910714285713"/>
         </scene>
         <!--Data View Controller-->
         <scene sceneID="L2i-c8-brX">
             <objects>
                 <viewController storyboardIdentifier="tabelaInsulina" id="JqD-Wr-iDw" customClass="dataViewController" customModule="diabetaXD" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="A11-F6-f6J">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="welcomeOB" translatesAutoresizingMaskIntoConstraints="NO" id="RhC-VX-CHg">
@@ -113,7 +114,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5gW-tC-b8H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-381.15942028985512" y="1572.9910714285713"/>
+            <point key="canvasLocation" x="528.98550724637687" y="1572.9910714285713"/>
+        </scene>
+        <!--Navigation View Controller-->
+        <scene sceneID="og0-SY-Em9">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jrI-kz-zEe" customClass="NavigationViewController" customModule="diabetaXD" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gAd-mA-xfQ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="nZ2-2G-1bX" kind="relationship" relationship="rootViewController" id="fPF-rU-7BR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kpg-x1-Zp3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1307.2463768115942" y="1572.9910714285713"/>
         </scene>
     </scenes>
     <resources>
