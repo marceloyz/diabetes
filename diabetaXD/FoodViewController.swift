@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class FoodViewController: UIViewController, UITableViewDelegate, UISearchBarDelegate, UITableViewDataSource {
     
@@ -21,6 +22,8 @@ class FoodViewController: UIViewController, UITableViewDelegate, UISearchBarDele
         tableView.delegate = self
         tableView.dataSource = self
         searchBar.delegate = self
+        
+        
         
         do {
             let data = try Data(contentsOf: Bundle.main.url(forResource: "TACO", withExtension: "json")!)
@@ -44,6 +47,12 @@ class FoodViewController: UIViewController, UITableViewDelegate, UISearchBarDele
         }
         return UITableViewCell()
     }
+    
+    
+    
+
+    
+    
     
     // Do any additional setup after loading the view.
     
