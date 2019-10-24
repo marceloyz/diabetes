@@ -12,6 +12,8 @@
 		55105E242350BC7200CB3426 /* dataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55105E232350BC7200CB3426 /* dataViewController.swift */; };
 		5532F3F62361C18E00074AAF /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5532F3F52361C18E00074AAF /* NavigationViewController.swift */; };
 		5532F3FA2361D00400074AAF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5532F3F92361D00400074AAF /* HomeViewController.swift */; };
+		5532F3FC2361EBA200074AAF /* PopUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5532F3FB2361EBA200074AAF /* PopUpVC.swift */; };
+		5532F3FE2361ED1E00074AAF /* modalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5532F3FD2361ED1E00074AAF /* modalView.swift */; };
 		5532FA8323606ACD0029FDFD /* CustomBotton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5532FA8223606ACD0029FDFD /* CustomBotton.swift */; };
 		5532FA8C23607D880029FDFD /* Baloo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5532FA8B23607D880029FDFD /* Baloo-Regular.ttf */; };
 		5575967A234DF7BF00955C02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55759679234DF7BF00955C02 /* AppDelegate.swift */; };
@@ -33,6 +35,8 @@
 		55157BAA235F451F00709A31 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5532F3F52361C18E00074AAF /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 		5532F3F92361D00400074AAF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		5532F3FB2361EBA200074AAF /* PopUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpVC.swift; sourceTree = "<group>"; };
+		5532F3FD2361ED1E00074AAF /* modalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = modalView.swift; sourceTree = "<group>"; };
 		5532FA8223606ACD0029FDFD /* CustomBotton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBotton.swift; sourceTree = "<group>"; };
 		5532FA8B23607D880029FDFD /* Baloo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Baloo-Regular.ttf"; sourceTree = "<group>"; };
 		55759676234DF7BF00955C02 /* diabetaXD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = diabetaXD.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,6 +101,8 @@
 				55C18ADE234F586900CA1A40 /* Food.swift */,
 				55C18AD4234F4FF100CA1A40 /* FoodViewCell.swift */,
 				5575967D234DF7BF00955C02 /* Main.storyboard */,
+				5532F3FD2361ED1E00074AAF /* modalView.swift */,
+				5532F3FB2361EBA200074AAF /* PopUpVC.swift */,
 				5532F3F92361D00400074AAF /* HomeViewController.swift */,
 				55C18AE4234F5AD800CA1A40 /* CarboListing.swift */,
 				55759680234DF7C000955C02 /* Assets.xcassets */,
@@ -189,8 +195,10 @@
 				55C18AE5234F5AD800CA1A40 /* CarboListing.swift in Sources */,
 				5532FA8323606ACD0029FDFD /* CustomBotton.swift in Sources */,
 				55C18ADF234F586900CA1A40 /* Food.swift in Sources */,
+				5532F3FE2361ED1E00074AAF /* modalView.swift in Sources */,
 				5532F3FA2361D00400074AAF /* HomeViewController.swift in Sources */,
 				55C18ADB234F540800CA1A40 /* FoodViewController.swift in Sources */,
+				5532F3FC2361EBA200074AAF /* PopUpVC.swift in Sources */,
 				5532F3F62361C18E00074AAF /* NavigationViewController.swift in Sources */,
 				55C18AD5234F4FF100CA1A40 /* FoodViewCell.swift in Sources */,
 			);
