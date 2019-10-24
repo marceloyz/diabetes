@@ -14,10 +14,6 @@ class loginViewController: UIViewController{
     }
 
     
-    @IBAction func connectButton(_ sender: Any) {
-        self.performSegue(withIdentifier: "loginToData", sender: self)
-
-    }
   
           
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

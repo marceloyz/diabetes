@@ -33,7 +33,6 @@
                                     <color key="titleColor" systemColor="separatorColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="connectButton:" destination="nZ2-2G-1bX" eventType="touchUpInside" id="vP8-C2-NBb"/>
                                     <action selector="topButtonTapped:" destination="nZ2-2G-1bX" eventType="touchUpInside" id="psc-WC-Yjk"/>
                                     <segue destination="JqD-Wr-iDw" kind="show" identifier="loginToData" id="xTv-ct-Rkd"/>
                                 </connections>
