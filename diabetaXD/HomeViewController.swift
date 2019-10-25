@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import CoreData
+
 
 class HomeViewController: UIViewController {
     
@@ -36,3 +38,5 @@ class HomeViewController: UIViewController {
             unidadeLabel.text = "\(Int(listaNome.unidade))"
         }
     }
+}
+

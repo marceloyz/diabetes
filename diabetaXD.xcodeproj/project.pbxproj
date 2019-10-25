@@ -111,13 +111,13 @@
 				5532F3FB2361EBA200074AAF /* PopUpVC.swift */,
 				5532F3F92361D00400074AAF /* HomeViewController.swift */,
 				55C18AE4234F5AD800CA1A40 /* CarboListing.swift */,
-				55759680234DF7C000955C02 /* Assets.xcassets */,
 				55759682234DF7C000955C02 /* LaunchScreen.storyboard */,
 				55C18AE8235DE93000CA1A40 /* TACO.json */,
 				55157BAA235F451F00709A31 /* Info.plist */,
 				550EF2E423630C4F00F15DC7 /* diabetaXD.xcdatamodeld */,
 				550EF2E723630CD600F15DC7 /* ListaNome+CoreDataProperties.swift */,
 				550EF2E923630D4900F15DC7 /* ListaNome+CoreDataClass.swift */,
+				55759680234DF7C000955C02 /* Assets.xcassets */,
 				5532FA8A23607D310029FDFD /* fonts */,
 			);
 			path = diabetaXD;

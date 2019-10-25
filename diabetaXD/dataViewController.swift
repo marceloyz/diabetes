@@ -1,6 +1,7 @@
 
 
 import UIKit
+import CoreData
 
 class dataViewController: UIViewController {
     var name:String? = ""
