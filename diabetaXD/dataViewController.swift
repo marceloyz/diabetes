@@ -4,7 +4,7 @@ import UIKit
 
 class dataViewController: UIViewController {
     var name:String? = ""
-    
+     var people: [NSManagedObject] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +32,43 @@ class dataViewController: UIViewController {
         
     }
     
-    // BOTAO design ----------------------------------- //
+    @IBOutlet weak var unAdd: UITextField!
+   
+    @IBOutlet weak var grAdd: UITextField!
+    
+    
+    @IBAction func prosseguirButton(_ sender: Any) {
+        
+        let varRazao1 = unAdd.text!
+        let varRazao2 = grAdd.text
+        
+        save(unidade: varRazao1, grama: varRazao2!)
+    }
+    func save(unidade: String, grama: String) {
+            guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+                return
+            }
+            let managedContext = appDelegate.persistentContainer.viewContext
+            let lista = NSEntityDescription.insertNewObject(forEntityName: "ListaNome", into: managedContext)
+    //        let entity = NSEntityDescription.entity(forEntityName: "ListaNome", in: managedContext)!
+    //        let person = NSManagedObject(entity: entity, insertInto: managedContext)
+            (lista as? ListaNome)?.unidade = int_fast64_t(Int(unidade)!)
+            (lista as? ListaNome)?.grama = int_fast64_t(Int(grama)!)
+            
+            do {
+                try managedContext.save()
+            } catch let error as NSError {
+                print("Could not save. \(error), \(error.userInfo)")
+            }
+        }
+
+    
+    
+    
+    
+    
+    
+     // BOTAO design ----------------------------------- //
     var bottomCustomButton = CustomBotton()
         
     @IBOutlet weak var topCustomButton: CustomBotton!

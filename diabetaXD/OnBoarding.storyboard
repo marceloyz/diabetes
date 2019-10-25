@@ -50,7 +50,7 @@
                     <navigationItem key="navigationItem" id="PzM-EN-I8o"/>
                     <connections>
                         <outlet property="nomeTextField" destination="hW0-F8-t7T" id="yEu-0P-vIh"/>
-                        <outlet property="topCustomButton" destination="mCh-iq-XJ6" id="cGj-Pu-DTI"/>
+                        <outlet property="topCustomButton" destination="mCh-iq-XJ6" id="Pl7-Ci-Oq4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wwz-sx-1DC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -98,6 +98,7 @@
                                 </state>
                                 <connections>
                                     <action selector="button:" destination="JqD-Wr-iDw" eventType="touchUpInside" id="N5n-Ep-mvD"/>
+                                    <action selector="prosseguirButton:" destination="JqD-Wr-iDw" eventType="touchUpInside" id="LRc-MO-cpR"/>
                                     <action selector="topButtonTapped:" destination="JqD-Wr-iDw" eventType="touchUpInside" id="rvQ-Vh-6mc"/>
                                 </connections>
                             </button>
@@ -107,7 +108,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="2gU-qG-Vwf"/>
                     <connections>
+                        <outlet property="grAdd" destination="0pA-MQ-WaD" id="OU1-Mw-MRB"/>
                         <outlet property="topCustomButton" destination="km0-7H-EBm" id="1MG-3l-jND"/>
+                        <outlet property="unAdd" destination="FiL-1p-JKG" id="KRW-E2-whq"/>
                         <outlet property="welcomeLabekl" destination="8a9-0I-RUn" id="e43-5A-5hB"/>
                     </connections>
                 </viewController>

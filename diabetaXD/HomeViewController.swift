@@ -9,11 +9,30 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-
+    
+    
+    @IBOutlet weak var unidadeLabel: UILabel!
+    
+    @IBOutlet weak var gramaLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+            return
+        }
+        let managedContext = appDelegate.persistentContainer.viewContext
+        
+        var listaListaNome:[ListaNome] = []
+        do {
+            listaListaNome = try ((managedContext.fetch(ListaNome.fetchRequest()) as? [ListaNome])!)
+        } catch {
+            //deu erro
+        }
+        if (listaListaNome.count > 0) {
+            let listaNome = listaListaNome[0]
+            gramaLabel.text = "\(Int(listaNome.grama))"
+            unidadeLabel.text = "\(Int(listaNome.unidade))"
+        }
     }
-    
-
-}

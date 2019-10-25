@@ -25,6 +25,8 @@ class loginViewController: UIViewController{
 }
     
     //Botao design------------------------------------------------------------//
+    
+    
     @IBOutlet weak var topCustomButton: CustomBotton!
     var bottomCustomButton = CustomBotton()
      
