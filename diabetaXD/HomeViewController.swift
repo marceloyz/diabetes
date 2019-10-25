@@ -10,16 +10,36 @@ import UIKit
 import CoreData
 
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     
+   
+    @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var unidadeLabel: UILabel!
     
     @IBOutlet weak var gramaLabel: UILabel!
     
+    func initialize(){
+        
+     
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        tableView.reloadData()
+              
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+     
+
+        
+ 
+        initialize()
+        
+        
+        
+        
         
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
             return
@@ -38,5 +58,44 @@ class HomeViewController: UIViewController {
             unidadeLabel.text = "\(Int(listaNome.unidade))"
         }
     }
+    
+    
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+            // #warning Incomplete implementation, return the number of sections
+            return Singleton.sharedInstance.dadosTitulo.count
+        }
+        
+        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+            // #warning Incomplete implementation, return the number of rows
+            return Singleton.sharedInstance.dadosTitulo.count
+        }
+        
+        
+        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+            
+            let cell = tableView.dequeueReusableCell(withIdentifier: "foodCell", for: indexPath) as!
+            AlimentosTVC
+            
+            let row = indexPath.row
+            
+            
+            cell.nomeAlimentoCell.text = Singleton.sharedInstance.dadosTitulo[indexPath.row]
+        
+            
+            return cell
+        }
+        
+        func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+            return 90
+        }
+        
+
+        
 }
+        
+
+    
+    
+
 

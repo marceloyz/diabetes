@@ -23,6 +23,10 @@
 		5575967F234DF7BF00955C02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5575967D234DF7BF00955C02 /* Main.storyboard */; };
 		55759681234DF7C000955C02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55759680234DF7C000955C02 /* Assets.xcassets */; };
 		55759684234DF7C000955C02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55759682234DF7C000955C02 /* LaunchScreen.storyboard */; };
+		557AD6BB236316190084F0C6 /* ListaCarb+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557AD6B9236316190084F0C6 /* ListaCarb+CoreDataClass.swift */; };
+		557AD6BC236316190084F0C6 /* ListaCarb+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557AD6BA236316190084F0C6 /* ListaCarb+CoreDataProperties.swift */; };
+		557AD6C0236320180084F0C6 /* AlimentosTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557AD6BF236320180084F0C6 /* AlimentosTVC.swift */; };
+		557AD6C22363202A0084F0C6 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557AD6C12363202A0084F0C6 /* Singleton.swift */; };
 		55C18AD5234F4FF100CA1A40 /* FoodViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C18AD4234F4FF100CA1A40 /* FoodViewCell.swift */; };
 		55C18ADB234F540800CA1A40 /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C18ADA234F540800CA1A40 /* FoodViewController.swift */; };
 		55C18ADF234F586900CA1A40 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C18ADE234F586900CA1A40 /* Food.swift */; };
@@ -50,6 +54,10 @@
 		5575967E234DF7BF00955C02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		55759680234DF7C000955C02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55759683234DF7C000955C02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		557AD6B9236316190084F0C6 /* ListaCarb+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ListaCarb+CoreDataClass.swift"; sourceTree = "<group>"; };
+		557AD6BA236316190084F0C6 /* ListaCarb+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ListaCarb+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		557AD6BF236320180084F0C6 /* AlimentosTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlimentosTVC.swift; sourceTree = "<group>"; };
+		557AD6C12363202A0084F0C6 /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
 		55C18AD4234F4FF100CA1A40 /* FoodViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewCell.swift; sourceTree = "<group>"; };
 		55C18ADA234F540800CA1A40 /* FoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
 		55C18ADE234F586900CA1A40 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
@@ -96,6 +104,8 @@
 		55759678234DF7BF00955C02 /* diabetaXD */ = {
 			isa = PBXGroup;
 			children = (
+				557AD6B9236316190084F0C6 /* ListaCarb+CoreDataClass.swift */,
+				557AD6BA236316190084F0C6 /* ListaCarb+CoreDataProperties.swift */,
 				555E46F82363122600FB1E60 /* ListaNome+CoreDataClass.swift */,
 				555E46F92363122600FB1E60 /* ListaNome+CoreDataProperties.swift */,
 				55105E232350BC7200CB3426 /* dataViewController.swift */,
@@ -117,6 +127,8 @@
 				55C18AE8235DE93000CA1A40 /* TACO.json */,
 				55157BAA235F451F00709A31 /* Info.plist */,
 				550EF2E423630C4F00F15DC7 /* diabetaXD.xcdatamodeld */,
+				557AD6BF236320180084F0C6 /* AlimentosTVC.swift */,
+				557AD6C12363202A0084F0C6 /* Singleton.swift */,
 				55759680234DF7C000955C02 /* Assets.xcassets */,
 				5532FA8A23607D310029FDFD /* fonts */,
 			);
@@ -208,9 +220,13 @@
 				55C18ADF234F586900CA1A40 /* Food.swift in Sources */,
 				5532F3FE2361ED1E00074AAF /* modalView.swift in Sources */,
 				5532F3FA2361D00400074AAF /* HomeViewController.swift in Sources */,
+				557AD6C0236320180084F0C6 /* AlimentosTVC.swift in Sources */,
+				557AD6BC236316190084F0C6 /* ListaCarb+CoreDataProperties.swift in Sources */,
+				557AD6C22363202A0084F0C6 /* Singleton.swift in Sources */,
 				55C18ADB234F540800CA1A40 /* FoodViewController.swift in Sources */,
 				5532F3FC2361EBA200074AAF /* PopUpVC.swift in Sources */,
 				5532F3F62361C18E00074AAF /* NavigationViewController.swift in Sources */,
+				557AD6BB236316190084F0C6 /* ListaCarb+CoreDataClass.swift in Sources */,
 				550EF2E623630C4F00F15DC7 /* diabetaXD.xcdatamodeld in Sources */,
 				55C18AD5234F4FF100CA1A40 /* FoodViewCell.swift in Sources */,
 			);
