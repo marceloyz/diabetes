@@ -5,10 +5,12 @@
 //  Created by Aluno Mack on 25/10/19.
 //  Copyright © 2019 Aluno Mack. All rights reserved.
 //
+//
 
 import Foundation
-import CoraData
+import CoreData
 
-public class ListaNome: NSManagedObject{
-    
+@objc(ListaNome)
+public class ListaNome: NSManagedObject {
+
 }

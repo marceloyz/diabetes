@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		550EF2E623630C4F00F15DC7 /* diabetaXD.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 550EF2E423630C4F00F15DC7 /* diabetaXD.xcdatamodeld */; };
-		550EF2E823630CD600F15DC7 /* ListaNome+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550EF2E723630CD600F15DC7 /* ListaNome+CoreDataProperties.swift */; };
-		550EF2EA23630D4900F15DC7 /* ListaNome+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550EF2E923630D4900F15DC7 /* ListaNome+CoreDataClass.swift */; };
 		55105E1623509C0400CB3426 /* OnBoarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55105E1523509C0400CB3426 /* OnBoarding.storyboard */; };
 		55105E202350ACDA00CB3426 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55105E1F2350ACDA00CB3426 /* loginViewController.swift */; };
 		55105E242350BC7200CB3426 /* dataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55105E232350BC7200CB3426 /* dataViewController.swift */; };
@@ -19,6 +17,8 @@
 		5532F3FE2361ED1E00074AAF /* modalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5532F3FD2361ED1E00074AAF /* modalView.swift */; };
 		5532FA8323606ACD0029FDFD /* CustomBotton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5532FA8223606ACD0029FDFD /* CustomBotton.swift */; };
 		5532FA8C23607D880029FDFD /* Baloo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5532FA8B23607D880029FDFD /* Baloo-Regular.ttf */; };
+		555E46FA2363122600FB1E60 /* ListaNome+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555E46F82363122600FB1E60 /* ListaNome+CoreDataClass.swift */; };
+		555E46FB2363122600FB1E60 /* ListaNome+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555E46F92363122600FB1E60 /* ListaNome+CoreDataProperties.swift */; };
 		5575967A234DF7BF00955C02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55759679234DF7BF00955C02 /* AppDelegate.swift */; };
 		5575967F234DF7BF00955C02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5575967D234DF7BF00955C02 /* Main.storyboard */; };
 		55759681234DF7C000955C02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55759680234DF7C000955C02 /* Assets.xcassets */; };
@@ -33,8 +33,6 @@
 
 /* Begin PBXFileReference section */
 		550EF2E523630C4F00F15DC7 /* diabetaXD.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = diabetaXD.xcdatamodel; sourceTree = "<group>"; };
-		550EF2E723630CD600F15DC7 /* ListaNome+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ListaNome+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		550EF2E923630D4900F15DC7 /* ListaNome+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ListaNome+CoreDataClass.swift"; sourceTree = "<group>"; };
 		55105E1523509C0400CB3426 /* OnBoarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnBoarding.storyboard; sourceTree = "<group>"; };
 		55105E1F2350ACDA00CB3426 /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = loginViewController.swift; path = ../loginViewController.swift; sourceTree = "<group>"; };
 		55105E232350BC7200CB3426 /* dataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataViewController.swift; sourceTree = "<group>"; };
@@ -45,6 +43,8 @@
 		5532F3FD2361ED1E00074AAF /* modalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = modalView.swift; sourceTree = "<group>"; };
 		5532FA8223606ACD0029FDFD /* CustomBotton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBotton.swift; sourceTree = "<group>"; };
 		5532FA8B23607D880029FDFD /* Baloo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Baloo-Regular.ttf"; sourceTree = "<group>"; };
+		555E46F82363122600FB1E60 /* ListaNome+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ListaNome+CoreDataClass.swift"; sourceTree = "<group>"; };
+		555E46F92363122600FB1E60 /* ListaNome+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ListaNome+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		55759676234DF7BF00955C02 /* diabetaXD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = diabetaXD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55759679234DF7BF00955C02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5575967E234DF7BF00955C02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -96,6 +96,8 @@
 		55759678234DF7BF00955C02 /* diabetaXD */ = {
 			isa = PBXGroup;
 			children = (
+				555E46F82363122600FB1E60 /* ListaNome+CoreDataClass.swift */,
+				555E46F92363122600FB1E60 /* ListaNome+CoreDataProperties.swift */,
 				55105E232350BC7200CB3426 /* dataViewController.swift */,
 				55105E1F2350ACDA00CB3426 /* loginViewController.swift */,
 				55105E1523509C0400CB3426 /* OnBoarding.storyboard */,
@@ -115,8 +117,6 @@
 				55C18AE8235DE93000CA1A40 /* TACO.json */,
 				55157BAA235F451F00709A31 /* Info.plist */,
 				550EF2E423630C4F00F15DC7 /* diabetaXD.xcdatamodeld */,
-				550EF2E723630CD600F15DC7 /* ListaNome+CoreDataProperties.swift */,
-				550EF2E923630D4900F15DC7 /* ListaNome+CoreDataClass.swift */,
 				55759680234DF7C000955C02 /* Assets.xcassets */,
 				5532FA8A23607D310029FDFD /* fonts */,
 			);
@@ -201,11 +201,11 @@
 				55105E202350ACDA00CB3426 /* loginViewController.swift in Sources */,
 				5575967A234DF7BF00955C02 /* AppDelegate.swift in Sources */,
 				55C18AE3234F593A00CA1A40 /* FoodHandler.swift in Sources */,
+				555E46FB2363122600FB1E60 /* ListaNome+CoreDataProperties.swift in Sources */,
 				55C18AE5234F5AD800CA1A40 /* CarboListing.swift in Sources */,
+				555E46FA2363122600FB1E60 /* ListaNome+CoreDataClass.swift in Sources */,
 				5532FA8323606ACD0029FDFD /* CustomBotton.swift in Sources */,
-				550EF2E823630CD600F15DC7 /* ListaNome+CoreDataProperties.swift in Sources */,
 				55C18ADF234F586900CA1A40 /* Food.swift in Sources */,
-				550EF2EA23630D4900F15DC7 /* ListaNome+CoreDataClass.swift in Sources */,
 				5532F3FE2361ED1E00074AAF /* modalView.swift in Sources */,
 				5532F3FA2361D00400074AAF /* HomeViewController.swift in Sources */,
 				55C18ADB234F540800CA1A40 /* FoodViewController.swift in Sources */,
